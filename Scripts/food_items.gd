@@ -10,8 +10,8 @@ class Food:
 	func _to_string() -> String:
 		return name
 	
-	func _get_sprite_path() -> String:
-		return sprite_path
+	func get_sprite_path() -> Resource:
+		return load(sprite_path)
 
 class Burger extends Food:
 	func _init() -> void:

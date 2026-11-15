@@ -8,6 +8,7 @@ var current_food = null
 func _ready() -> void:
 	current_food = 0
 	print(check_food())
+	$FoodSprite.texture = check_food().get_sprite_path()
 
 func check_food():
 	if current_food != null:
