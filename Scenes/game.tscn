@@ -5,9 +5,9 @@
 [ext_resource type="PackedScene" uid="uid://b34un58kud4c8" path="res://Scenes/speech_bubble.tscn" id="3_wrm1d"]
 [ext_resource type="PackedScene" uid="uid://bk4gouwwvqhsf" path="res://Scenes/hotel_map.tscn" id="4_3dryh"]
 [ext_resource type="Texture2D" uid="uid://buag7l0oc3o7v" path="res://Sprites/Monster/tree_angy.png" id="4_v158k"]
-[ext_resource type="Script" uid="uid://chogmxv1xxtc6" path="res://Scenes/tree_angy.gd" id="5_h4fw4"]
+[ext_resource type="Script" uid="uid://chogmxv1xxtc6" path="res://Scripts/tree_angy.gd" id="5_h4fw4"]
 [ext_resource type="Texture2D" uid="uid://csvj8xse8mrdj" path="res://Sprites/Monster/tree_cal m.png" id="5_wowpa"]
-[ext_resource type="Script" uid="uid://bor2jfljkp2wm" path="res://Scenes/tree_cal_m.gd" id="6_i6g32"]
+[ext_resource type="Script" uid="uid://bor2jfljkp2wm" path="res://Scripts/tree_cal_m.gd" id="6_i6g32"]
 
 [sub_resource type="Gradient" id="Gradient_3dryh"]
 offsets = PackedFloat32Array(0, 0.4849624)
