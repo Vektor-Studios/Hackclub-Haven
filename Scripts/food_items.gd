@@ -16,6 +16,7 @@ class Food:
 class Burger extends Food:
 	func _init() -> void:
 		name = "Burger"
+		sprite_path = "res://Sprites/burger_sprite.png"
 
 class Pasta extends Food:
 	func _init() -> void:
