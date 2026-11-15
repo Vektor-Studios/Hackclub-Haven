@@ -22,7 +22,6 @@ position = Vector2(2239, 2227)
 scale = Vector2(1.5, 1.5)
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1043050218]
-visible = false
 color = Color(0, 0, 0, 1)
 
 [node name="Player" parent="." unique_id=1714150782 instance=ExtResource("1_ebmjs")]
@@ -44,6 +43,7 @@ position = Vector2(4191, 219)
 <<<<<<< HEAD
 [node name="FoodItemPickup" parent="." unique_id=624916689 instance=ExtResource("2_qxrlw")]
 position = Vector2(419, 238)
+<<<<<<< HEAD
 
 [node name="Node2D" type="Node2D" parent="." unique_id=1254706362]
 
@@ -108,3 +108,5 @@ item_id = 4
 position = Vector2(3901, 103)
 item_id = 2
 >>>>>>> db7eb707ef5175d44ab393fc1f16bbaa8ca3abf2
+=======
+>>>>>>> parent of 1c797ca (added nodes to rooms)
