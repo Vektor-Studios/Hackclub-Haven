@@ -5,6 +5,9 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dr8dx"]
 size = Vector2(30.25, 2519)
 
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_dr8dx"]
+polygon = PackedVector2Array(504, -1482, 504, 1037, 474, 1037, 474, -1482)
+
 [node name="HotelMap" type="Node2D" unique_id=1709313961]
 
 [node name="Floor" type="Sprite2D" parent="." unique_id=727837661]
@@ -17,3 +20,6 @@ collision_layer = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=1695678276]
 position = Vector2(489.125, -222.5)
 shape = SubResource("RectangleShape2D_dr8dx")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="RigidBody2D" unique_id=1412579531]
+occluder = SubResource("OccluderPolygon2D_dr8dx")

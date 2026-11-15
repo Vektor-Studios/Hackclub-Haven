@@ -5,6 +5,16 @@
 [ext_resource type="PackedScene" uid="uid://b34un58kud4c8" path="res://Scenes/speech_bubble.tscn" id="3_wrm1d"]
 [ext_resource type="PackedScene" uid="uid://bk4gouwwvqhsf" path="res://Scenes/hotel_map.tscn" id="4_3dryh"]
 
+[sub_resource type="Gradient" id="Gradient_3dryh"]
+offsets = PackedFloat32Array(0, 0.4849624)
+colors = PackedColorArray(0.78183013, 0.78183013, 0.7818301, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_wowpa"]
+gradient = SubResource("Gradient_3dryh")
+fill = 1
+fill_from = Vector2(0.49530515, 0.5)
+fill_to = Vector2(1, 1)
+
 [node name="Game" type="Node2D" unique_id=445429191]
 
 [node name="HotelMap" parent="." unique_id=1709313961 instance=ExtResource("4_3dryh")]
@@ -18,5 +28,13 @@ position = Vector2(2462, 251)
 [node name="SpeechBubble" parent="Player" unique_id=1949044896 instance=ExtResource("3_wrm1d")]
 position = Vector2(480, -319)
 
+[node name="PointLight2D" type="PointLight2D" parent="Player" unique_id=825039255]
+shadow_enabled = true
+texture = SubResource("GradientTexture2D_wowpa")
+texture_scale = 20.0
+
 [node name="FoodItemPickup" parent="." unique_id=624916689 instance=ExtResource("2_qxrlw")]
 position = Vector2(419, 238)
+
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1043050218]
+color = Color(0, 0, 0, 1)
