@@ -18,3 +18,4 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 	if item_id != null:
 		body.current_food = item_id
 		body.reload_sprite()
+	queue_free()
