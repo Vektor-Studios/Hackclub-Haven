@@ -41,8 +41,28 @@ follow_viewport_enabled = true
 [node name="SpeechBubble" parent="Player/CanvasLayer" unique_id=1949044896 instance=ExtResource("3_wrm1d")]
 position = Vector2(4191, 219)
 
-[node name="FoodItemPickup" parent="." unique_id=624916689 instance=ExtResource("2_qxrlw")]
-position = Vector2(419, 238)
+[node name="FoodItemPickup6" parent="." unique_id=624916689 instance=ExtResource("2_qxrlw")]
+position = Vector2(3114, 879)
+item_id = 5
+
+[node name="FoodItemPickup5" parent="." unique_id=1568799542 instance=ExtResource("2_qxrlw")]
+position = Vector2(3100, 592)
+item_id = 4
+
+[node name="FoodItemPickup4" parent="." unique_id=1868883547 instance=ExtResource("2_qxrlw")]
+position = Vector2(3102, 338)
+item_id = 3
+
+[node name="FoodItemPickup3" parent="." unique_id=642091972 instance=ExtResource("2_qxrlw")]
+position = Vector2(3788, 121)
+item_id = 2
+
+[node name="FoodItemPickup2" parent="." unique_id=1127154352 instance=ExtResource("2_qxrlw")]
+position = Vector2(3427, 114)
+item_id = 1
+
+[node name="FoodItemPickup" parent="." unique_id=748739853 instance=ExtResource("2_qxrlw")]
+position = Vector2(3109, 111)
 
 [node name="Burner" parent="." unique_id=1445088838 instance=ExtResource("5_wowpa")]
 position = Vector2(4198, 209)
