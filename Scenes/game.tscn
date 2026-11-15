@@ -24,21 +24,65 @@ scale = Vector2(1.5, 1.5)
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1043050218]
 color = Color(0, 0, 0, 1)
 
-[node name="Player" parent="." unique_id=1714150782 instance=ExtResource("1_ebmjs")]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=950640761]
+follow_viewport_enabled = true
+
+[node name="Player" parent="CanvasLayer" unique_id=1714150782 instance=ExtResource("1_ebmjs")]
 position = Vector2(3711, 538)
 
-[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1822298211]
+[node name="Camera2D" type="Camera2D" parent="CanvasLayer/Player" unique_id=1822298211]
 
-[node name="PointLight2D" type="PointLight2D" parent="Player" unique_id=825039255]
+[node name="SpeechBubble" parent="CanvasLayer/Player" unique_id=1949044896 instance=ExtResource("3_wrm1d")]
+position = Vector2(490, -309)
+
+[node name="PointLight2D" type="PointLight2D" parent="CanvasLayer/Player" unique_id=825039255]
 shadow_enabled = true
 texture = SubResource("GradientTexture2D_wowpa")
 texture_scale = 20.0
 
-[node name="CanvasLayer" type="CanvasLayer" parent="Player" unique_id=950640761]
-follow_viewport_enabled = true
-
-[node name="SpeechBubble" parent="Player/CanvasLayer" unique_id=1949044896 instance=ExtResource("3_wrm1d")]
-position = Vector2(4191, 219)
-
 [node name="FoodItemPickup" parent="." unique_id=624916689 instance=ExtResource("2_qxrlw")]
 position = Vector2(419, 238)
+
+[node name="Node2D" type="Node2D" parent="." unique_id=249054105]
+
+[node name="Node2D" type="Node2D" parent="Node2D" unique_id=1371683774]
+position = Vector2(611, 311)
+
+[node name="Node2D2" type="Node2D" parent="Node2D" unique_id=1396140892]
+position = Vector2(531, 992)
+
+[node name="Node2D3" type="Node2D" parent="Node2D" unique_id=1120010896]
+position = Vector2(577, 1627)
+
+[node name="Node2D4" type="Node2D" parent="Node2D" unique_id=322169839]
+position = Vector2(565, 2296)
+
+[node name="Node2D5" type="Node2D" parent="Node2D" unique_id=1760319052]
+position = Vector2(577, 2884)
+
+[node name="Node2D6" type="Node2D" parent="Node2D" unique_id=1361737510]
+position = Vector2(588, 3450)
+
+[node name="Node2D7" type="Node2D" parent="Node2D" unique_id=988087389]
+position = Vector2(2134, 323)
+
+[node name="Node2D8" type="Node2D" parent="Node2D" unique_id=484290973]
+position = Vector2(2157, 958)
+
+[node name="Node2D9" type="Node2D" parent="Node2D" unique_id=808919003]
+position = Vector2(2180, 1661)
+
+[node name="Node2D10" type="Node2D" parent="Node2D" unique_id=533791150]
+position = Vector2(2227, 2296)
+
+[node name="Node2D11" type="Node2D" parent="Node2D" unique_id=1266401020]
+position = Vector2(2146, 2873)
+
+[node name="Node2D12" type="Node2D" parent="Node2D" unique_id=1686701282]
+position = Vector2(2157, 3473)
+
+[node name="Node2D13" type="Node2D" parent="Node2D" unique_id=1266432816]
+position = Vector2(554, 4303)
+
+[node name="Node2D14" type="Node2D" parent="Node2D" unique_id=1019348594]
+position = Vector2(2146, 4246)
