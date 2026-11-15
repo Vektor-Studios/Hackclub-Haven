@@ -5,7 +5,7 @@ extends Node2D
 var rng = RandomNumberGenerator.new()
 
 func _ready() -> void:
-	item_id = rng.randi_range(0,len(FoodItems.food_item_array))
+	item_id = rng.randi_range(0,len(FoodItems.food_item_array)-1)
 	set_sprite()
 
 func set_sprite():

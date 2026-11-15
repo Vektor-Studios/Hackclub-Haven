@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bo3oiw1hybdum" path="res://Sprites/food_items/pasta_sprite.png" id="2_cvnsp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f60y1"]
-size = Vector2(40, 40)
+size = Vector2(74, 74)
 
 [node name="Player" type="CharacterBody2D" unique_id=1714150782]
 collision_mask = 2
@@ -30,5 +30,4 @@ grow_vertical = 2
 color = Color(1, 0, 0, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1759937855]
-visible = false
 shape = SubResource("RectangleShape2D_f60y1")
