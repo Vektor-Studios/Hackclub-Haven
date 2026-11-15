@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bo3oiw1hybdum" path="res://Sprites/pasta_sprite.png" id="2_hkujc"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_hkujc"]
-radius = 48.010414
+radius = 76.00658
 
 [node name="FoodItemPickup" type="Node2D" unique_id=624916689]
 script = ExtResource("1_rivou")

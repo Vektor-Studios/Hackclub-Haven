@@ -1,7 +1,8 @@
 extends Node
 
 var food_item_array = [Pasta.new(),Head.new()
-,HotDog.new(),GrassBlock.new()]
+,HotDog.new(),GrassBlock.new(), BloodSmoothie.new(),
+]
 
 
 class Food:
@@ -33,3 +34,8 @@ class GrassBlock extends Food:
 	func _init() -> void:
 		name = "Grass Clump"
 		sprite_path = "res://Sprites/grass_block_sprite.png"
+
+class BloodSmoothie extends Food:
+	func _init() -> void:
+		name = "Blood Smoothie"
+		sprite_path = "res://Sprites/blood_smoothie_sprite.png"
