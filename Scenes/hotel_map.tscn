@@ -26,6 +26,21 @@ size = Vector2(0.99562025, 46.051296)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v73bu"]
 size = Vector2(0.99562025, 7.2308555)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3n2mi"]
+size = Vector2(3.9993358, 0.9787302)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f05bt"]
+size = Vector2(0.99562025, 8.104121)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w1hd0"]
+size = Vector2(0.99562025, 9.080748)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u1pgi"]
+size = Vector2(0.99562025, 9.080748)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oh364"]
+size = Vector2(11.002358, 1.0462408)
+
 [node name="HotelMap" type="Node2D" unique_id=1709313961]
 
 [node name="Floor" type="Sprite2D" parent="." unique_id=727837661]
@@ -97,3 +112,41 @@ collision_layer = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Parking Lot/StaticBody2D4" unique_id=1531853403]
 position = Vector2(41.512005, 38.579998)
 shape = SubResource("RectangleShape2D_v73bu")
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="Parking Lot" unique_id=2079259591]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Parking Lot/StaticBody2D5" unique_id=627880519]
+position = Vector2(40.018566, 42.49073)
+shape = SubResource("RectangleShape2D_3n2mi")
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="Parking Lot" unique_id=1210909742]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Parking Lot/StaticBody2D6" unique_id=1857417875]
+position = Vector2(38.50827, 46.774803)
+shape = SubResource("RectangleShape2D_f05bt")
+
+[node name="Suite 2" type="Node2D" parent="." unique_id=2121985152]
+scale = Vector2(29.63, 29.63)
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="Suite 2" unique_id=1899762482]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Suite 2/StaticBody2D6" unique_id=481415656]
+position = Vector2(28.484648, 45.546112)
+shape = SubResource("RectangleShape2D_w1hd0")
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="Suite 2" unique_id=1434665674]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Suite 2/StaticBody2D7" unique_id=484024749]
+position = Vector2(16.503544, 45.528183)
+shape = SubResource("RectangleShape2D_u1pgi")
+
+[node name="StaticBody2D8" type="StaticBody2D" parent="Suite 2" unique_id=1685319868]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Suite 2/StaticBody2D8" unique_id=1700593419]
+position = Vector2(22.477222, 41.52886)
+shape = SubResource("RectangleShape2D_oh364")
