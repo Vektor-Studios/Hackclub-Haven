@@ -21,3 +21,4 @@ class Pasta extends Food:
 class Head extends Food:
 	func _init() -> void:
 		name = "Severed Head"
+		sprite_path = "res://Sprites/human_head_sprite.png"
