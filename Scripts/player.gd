@@ -1,6 +1,5 @@
 extends CharacterBody2D
 
-@onready var anim = $AnimatedSprite2D
 
 const SPEED = 500.0
 var current_food = null
@@ -28,13 +27,4 @@ func _physics_process(_delta: float) -> void:
 	else:
 		velocity = Vector2.ZERO
 
-	if direction == Vector2.ZERO:
-		anim.play("idle")
-	else:
-		anim.play("walk")
-		
-	if direction < Vector2.ZERO:
-		anim.flip_h = true
-	elif direction > Vector2.ZERO:
-		anim.flip_h = false
 	move_and_slide()
