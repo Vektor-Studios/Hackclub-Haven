@@ -21,21 +21,24 @@ fill_to = Vector2(1, 1)
 position = Vector2(2239, 2227)
 scale = Vector2(1.5, 1.5)
 
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1043050218]
+color = Color(0, 0, 0, 1)
+
 [node name="Player" parent="." unique_id=1714150782 instance=ExtResource("1_ebmjs")]
 position = Vector2(3711, 538)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1822298211]
-
-[node name="SpeechBubble" parent="Player" unique_id=1949044896 instance=ExtResource("3_wrm1d")]
-position = Vector2(480, -319)
 
 [node name="PointLight2D" type="PointLight2D" parent="Player" unique_id=825039255]
 shadow_enabled = true
 texture = SubResource("GradientTexture2D_wowpa")
 texture_scale = 20.0
 
+[node name="CanvasLayer" type="CanvasLayer" parent="Player" unique_id=950640761]
+follow_viewport_enabled = true
+
+[node name="SpeechBubble" parent="Player/CanvasLayer" unique_id=1949044896 instance=ExtResource("3_wrm1d")]
+position = Vector2(4191, 219)
+
 [node name="FoodItemPickup" parent="." unique_id=624916689 instance=ExtResource("2_qxrlw")]
 position = Vector2(419, 238)
-
-[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1043050218]
-color = Color(0, 0, 0, 1)
