@@ -4,7 +4,6 @@
 [ext_resource type="PackedScene" uid="uid://dl8sll7pcc4yp" path="res://Scenes/food_item_pickup.tscn" id="2_qxrlw"]
 [ext_resource type="PackedScene" uid="uid://b34un58kud4c8" path="res://Scenes/speech_bubble.tscn" id="3_wrm1d"]
 [ext_resource type="PackedScene" uid="uid://bk4gouwwvqhsf" path="res://Scenes/hotel_map.tscn" id="4_3dryh"]
-[ext_resource type="PackedScene" uid="uid://cau63g10mgg4q" path="res://Scenes/burner.tscn" id="5_wowpa"]
 
 [sub_resource type="Gradient" id="Gradient_3dryh"]
 offsets = PackedFloat32Array(0, 0.4849624)
@@ -18,51 +17,28 @@ fill_to = Vector2(1, 1)
 
 [node name="Game" type="Node2D" unique_id=445429191]
 
-[node name="HotelMap2" parent="." unique_id=1709313961 instance=ExtResource("4_3dryh")]
-position = Vector2(2256, 2214)
+[node name="HotelMap" parent="." unique_id=1709313961 instance=ExtResource("4_3dryh")]
+position = Vector2(2239, 2227)
 scale = Vector2(1.5, 1.5)
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1043050218]
 color = Color(0, 0, 0, 1)
 
-[node name="Player" parent="." unique_id=1714150782 instance=ExtResource("1_ebmjs")]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=950640761]
+follow_viewport_enabled = true
+
+[node name="Player" parent="CanvasLayer" unique_id=1714150782 instance=ExtResource("1_ebmjs")]
 position = Vector2(3711, 538)
 
-[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1822298211]
+[node name="Camera2D" type="Camera2D" parent="CanvasLayer/Player" unique_id=1822298211]
 
-[node name="PointLight2D" type="PointLight2D" parent="Player" unique_id=825039255]
+[node name="SpeechBubble" parent="CanvasLayer/Player" unique_id=1949044896 instance=ExtResource("3_wrm1d")]
+position = Vector2(490, -309)
+
+[node name="PointLight2D" type="PointLight2D" parent="CanvasLayer/Player" unique_id=825039255]
 shadow_enabled = true
 texture = SubResource("GradientTexture2D_wowpa")
 texture_scale = 20.0
 
-[node name="CanvasLayer" type="CanvasLayer" parent="Player" unique_id=950640761]
-follow_viewport_enabled = true
-
-[node name="SpeechBubble" parent="Player/CanvasLayer" unique_id=1949044896 instance=ExtResource("3_wrm1d")]
-position = Vector2(4191, 219)
-
-[node name="FoodItemPickup6" parent="." unique_id=624916689 instance=ExtResource("2_qxrlw")]
-position = Vector2(3114, 879)
-item_id = 5
-
-[node name="FoodItemPickup5" parent="." unique_id=1568799542 instance=ExtResource("2_qxrlw")]
-position = Vector2(3100, 592)
-item_id = 4
-
-[node name="FoodItemPickup4" parent="." unique_id=1868883547 instance=ExtResource("2_qxrlw")]
-position = Vector2(3102, 338)
-item_id = 3
-
-[node name="FoodItemPickup3" parent="." unique_id=642091972 instance=ExtResource("2_qxrlw")]
-position = Vector2(3788, 121)
-item_id = 2
-
-[node name="FoodItemPickup2" parent="." unique_id=1127154352 instance=ExtResource("2_qxrlw")]
-position = Vector2(3427, 114)
-item_id = 1
-
-[node name="FoodItemPickup" parent="." unique_id=748739853 instance=ExtResource("2_qxrlw")]
-position = Vector2(3109, 111)
-
-[node name="Burner" parent="." unique_id=1445088838 instance=ExtResource("5_wowpa")]
-position = Vector2(4198, 209)
+[node name="FoodItemPickup" parent="." unique_id=624916689 instance=ExtResource("2_qxrlw")]
+position = Vector2(419, 238)

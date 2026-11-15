@@ -2,17 +2,9 @@ extends Node
 
 var food_item_array = [Pasta.new(),Head.new()
 ,HotDog.new(),GrassBlock.new(), BloodSmoothie.new(),
-Log.new()]
+]
 
-class Log:
-	var name = "Log"
-	var sprite_path = "res://Sprites/log_sprite.png"
-	
-	func _to_string() -> String:
-		return name
-	
-	func get_sprite_path() -> Resource:
-		return load(sprite_path)
+
 
 class Food:
 	var name = "Food"
