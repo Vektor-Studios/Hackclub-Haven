@@ -1,6 +1,5 @@
 extends Node
 
-@onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 var food_item_array = [Pasta.new(),Head.new()
 ,HotDog.new(),GrassBlock.new(), BloodSmoothie.new(),
 ]
