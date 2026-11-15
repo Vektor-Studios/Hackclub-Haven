@@ -35,29 +35,29 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_3smsa")
 }],
-"loop": 1,
+"loop": true,
 "name": &"default",
 "speed": 6.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f60y1"]
-size = Vector2(47, 79)
+size = Vector2(54, 169)
 
 [node name="Player" type="CharacterBody2D" unique_id=1714150782]
 collision_mask = 2
 script = ExtResource("1_v0iea")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=545307644]
-position = Vector2(-7.6293945e-06, -6)
-scale = Vector2(3, 3)
+scale = Vector2(6, 6)
 sprite_frames = SubResource("SpriteFrames_cbl1m")
+autoplay = "default"
 frame_progress = 0.29472893
 
 [node name="FoodSprite" type="Sprite2D" parent="." unique_id=1700099742]
-position = Vector2(-2.842171e-14, -72)
+position = Vector2(-2.842171e-14, -107)
 scale = Vector2(4.3969526, 4.3969526)
 texture = ExtResource("2_cvnsp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1759937855]
-position = Vector2(-1.5, 2.5)
+position = Vector2(-3, 11.5)
 shape = SubResource("RectangleShape2D_f60y1")
