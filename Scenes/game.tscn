@@ -22,6 +22,7 @@ position = Vector2(2239, 2227)
 scale = Vector2(1.5, 1.5)
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1043050218]
+visible = false
 color = Color(0, 0, 0, 1)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=950640761]
@@ -40,5 +41,30 @@ shadow_enabled = true
 texture = SubResource("GradientTexture2D_wowpa")
 texture_scale = 20.0
 
-[node name="FoodItemPickup" parent="." unique_id=624916689 instance=ExtResource("2_qxrlw")]
-position = Vector2(419, 238)
+[node name="Items" type="Node2D" parent="." unique_id=2083403025]
+position = Vector2(3088, 824)
+
+[node name="FoodItemPickup" parent="Items" unique_id=624916689 instance=ExtResource("2_qxrlw")]
+position = Vector2(10, -697)
+
+[node name="FoodItemPickup2" parent="Items" unique_id=1688779973 instance=ExtResource("2_qxrlw")]
+position = Vector2(309, -694)
+item_id = 1
+
+[node name="FoodItemPickup3" parent="Items" unique_id=475038618 instance=ExtResource("2_qxrlw")]
+position = Vector2(637, -697)
+item_id = 2
+
+[node name="FoodItemPickup4" parent="Items" unique_id=1289350238 instance=ExtResource("2_qxrlw")]
+position = Vector2(15, -478)
+item_id = 3
+
+[node name="FoodItemPickup5" parent="Items" unique_id=1742836033 instance=ExtResource("2_qxrlw")]
+position = Vector2(6, -262)
+item_id = 4
+
+[node name="FoodItemPickup6" parent="Items" unique_id=945997100 instance=ExtResource("2_qxrlw")]
+item_id = 5
+
+[node name="Locations" type="Node2D" parent="." unique_id=1863907811]
+position = Vector2(3088, 824)
