@@ -3,9 +3,20 @@
 [ext_resource type="Script" uid="uid://domareak4btb3" path="res://Scripts/food_item_pickup.gd" id="1_rivou"]
 [ext_resource type="Texture2D" uid="uid://bo3oiw1hybdum" path="res://Sprites/pasta_sprite.png" id="2_hkujc"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_hkujc"]
+radius = 48.010414
+
 [node name="FoodItemPickup" type="Node2D" unique_id=624916689]
 script = ExtResource("1_rivou")
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=1760030503]
 scale = Vector2(4.3969526, 4.3969526)
 texture = ExtResource("2_hkujc")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1468742363]
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=534567794]
+shape = SubResource("CircleShape2D_hkujc")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
