@@ -1,6 +1,6 @@
 extends Node
 
-var food_item_array = [Burger.new(),Pasta.new()]
+var food_item_array = [Pasta.new(),Head.new()]
 
 
 class Food:
@@ -13,11 +13,11 @@ class Food:
 	func get_sprite_path() -> Resource:
 		return load(sprite_path)
 
-class Burger extends Food:
-	func _init() -> void:
-		name = "Burger"
-		sprite_path = "res://Sprites/burger_sprite.png"
-
 class Pasta extends Food:
 	func _init() -> void:
 		name = "Pasta"
+		sprite_path = "res://Sprites/pasta_sprite.png"
+	
+class Head extends Food:
+	func _init() -> void:
+		name = "Severed Head"

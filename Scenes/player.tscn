@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://13tlneila0p5"]
 
 [ext_resource type="Script" uid="uid://dr8o456hgpj6n" path="res://Scripts/player.gd" id="1_v0iea"]
-[ext_resource type="Texture2D" uid="uid://bhv7qvdb7ir0f" path="res://Sprites/burger_sprite.png" id="2_cvnsp"]
+[ext_resource type="Texture2D" uid="uid://bo3oiw1hybdum" path="res://Sprites/pasta_sprite.png" id="2_cvnsp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f60y1"]
 size = Vector2(40, 40)
@@ -10,8 +10,8 @@ size = Vector2(40, 40)
 script = ExtResource("1_v0iea")
 
 [node name="FoodSprite" type="Sprite2D" parent="." unique_id=1700099742]
-position = Vector2(0, -74)
-scale = Vector2(0.738125, 0.738125)
+position = Vector2(-2.842171e-14, -72)
+scale = Vector2(4.3969526, 4.3969526)
 texture = ExtResource("2_cvnsp")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=2017136592]
