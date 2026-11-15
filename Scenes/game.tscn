@@ -45,7 +45,7 @@ position = Vector2(490, -309)
 [node name="PointLight2D" type="PointLight2D" parent="CanvasLayer/Player" unique_id=825039255]
 shadow_enabled = true
 texture = SubResource("GradientTexture2D_wowpa")
-texture_scale = 20.0
+texture_scale = 27.0
 
 [node name="TreeAngy" type="Sprite2D" parent="CanvasLayer/Player" unique_id=1870742168]
 visible = false

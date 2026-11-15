@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @onready var anim = $AnimatedSprite2D
 
-const SPEED = 500.0
+const SPEED = 800.0
 var current_food = null
 
 func _ready() -> void:
