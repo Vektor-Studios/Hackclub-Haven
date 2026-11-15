@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cau63g10mgg4q"]
 
 [ext_resource type="Script" path="res://Scripts/burner.gd" id="1_ldc4f"]
+[ext_resource type="Texture2D" uid="uid://bppby023f8mpx" path="res://Sprites/burner_sprite.png" id="1_xmnwn"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_603e6"]
 radius = 138.00362
@@ -13,6 +14,7 @@ collision_layer = 2
 script = ExtResource("1_ldc4f")
 
 [node name="BurnerSprite" type="Sprite2D" parent="." unique_id=1956238086]
+texture = ExtResource("1_xmnwn")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1499826417]
 collision_layer = 0

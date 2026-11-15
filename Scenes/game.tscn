@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dl8sll7pcc4yp" path="res://Scenes/food_item_pickup.tscn" id="2_qxrlw"]
 [ext_resource type="PackedScene" uid="uid://b34un58kud4c8" path="res://Scenes/speech_bubble.tscn" id="3_wrm1d"]
 [ext_resource type="PackedScene" uid="uid://bk4gouwwvqhsf" path="res://Scenes/hotel_map.tscn" id="4_3dryh"]
+[ext_resource type="PackedScene" uid="uid://cau63g10mgg4q" path="res://Scenes/burner.tscn" id="5_wowpa"]
 
 [sub_resource type="Gradient" id="Gradient_3dryh"]
 offsets = PackedFloat32Array(0, 0.4849624)
@@ -22,6 +23,7 @@ position = Vector2(2239, 2227)
 scale = Vector2(1.5, 1.5)
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1043050218]
+visible = false
 color = Color(0, 0, 0, 1)
 
 [node name="Player" parent="." unique_id=1714150782 instance=ExtResource("1_ebmjs")]
@@ -42,3 +44,6 @@ position = Vector2(4191, 219)
 
 [node name="FoodItemPickup" parent="." unique_id=624916689 instance=ExtResource("2_qxrlw")]
 position = Vector2(419, 238)
+
+[node name="Burner" parent="." unique_id=1445088838 instance=ExtResource("5_wowpa")]
+position = Vector2(4198, 209)
