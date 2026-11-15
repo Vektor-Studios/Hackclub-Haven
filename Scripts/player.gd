@@ -3,7 +3,15 @@ extends CharacterBody2D
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
+var current_food = null
 
+func _ready() -> void:
+	current_food = 0
+	print(check_food())
+
+func check_food():
+	if current_food != null:
+		return FoodItems.food_item_array[current_food]
 
 func _physics_process(_delta: float) -> void:
 	

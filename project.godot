@@ -15,6 +15,10 @@ run/main_scene="uid://du1r3j5673vca"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://Sprites/icon.svg"
 
+[autoload]
+
+FoodItems="*uid://lhde04w581ey"
+
 [input]
 
 up={
