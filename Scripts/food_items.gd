@@ -5,6 +5,7 @@ var food_item_array = [Pasta.new(),Head.new()
 ]
 
 
+
 class Food:
 	var name = "Food"
 	var sprite_path = "res://Sprites/icon.svg"
