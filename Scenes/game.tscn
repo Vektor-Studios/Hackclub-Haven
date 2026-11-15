@@ -22,6 +22,7 @@ position = Vector2(2239, 2227)
 scale = Vector2(1.5, 1.5)
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1043050218]
+visible = false
 color = Color(0, 0, 0, 1)
 
 [node name="Player" parent="." unique_id=1714150782 instance=ExtResource("1_ebmjs")]
@@ -40,5 +41,21 @@ follow_viewport_enabled = true
 [node name="SpeechBubble" parent="Player/CanvasLayer" unique_id=1949044896 instance=ExtResource("3_wrm1d")]
 position = Vector2(4191, 219)
 
-[node name="FoodItemPickup" parent="." unique_id=624916689 instance=ExtResource("2_qxrlw")]
-position = Vector2(419, 238)
+[node name="FoodItemPickup2" parent="." unique_id=624916689 instance=ExtResource("2_qxrlw")]
+position = Vector2(3515, 108)
+item_id = 1
+
+[node name="FoodItemPickup" parent="." unique_id=1256564101 instance=ExtResource("2_qxrlw")]
+position = Vector2(3106, 102)
+
+[node name="FoodItemPickup4" parent="." unique_id=1207343284 instance=ExtResource("2_qxrlw")]
+position = Vector2(3100, 786)
+item_id = 3
+
+[node name="FoodItemPickup5" parent="." unique_id=1954803490 instance=ExtResource("2_qxrlw")]
+position = Vector2(3101, 450)
+item_id = 4
+
+[node name="FoodItemPickup3" parent="." unique_id=1262434873 instance=ExtResource("2_qxrlw")]
+position = Vector2(3901, 103)
+item_id = 2
