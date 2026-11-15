@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://13tlneila0p5"]
+
+[ext_resource type="Script" uid="uid://dr8o456hgpj6n" path="res://Scripts/player.gd" id="1_v0iea"]
+[ext_resource type="Texture2D" uid="uid://cydxixderf4l0" path="res://Sprites/Character/pixilart-sprite (3).png" id="2_6t5aa"]
+[ext_resource type="Texture2D" uid="uid://bo3oiw1hybdum" path="res://Sprites/food_items/pasta_sprite.png" id="2_cvnsp"]
+[ext_resource type="Texture2D" uid="uid://bavohed0xpemp" path="res://Sprites/Character/pixilart-sprite (4).png" id="3_vgqql"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vgqql"]
+atlas = ExtResource("2_6t5aa")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fkybt"]
+atlas = ExtResource("2_6t5aa")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x3wgy"]
+atlas = ExtResource("2_6t5aa")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3smsa"]
+atlas = ExtResource("2_6t5aa")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8erm5"]
+atlas = ExtResource("3_vgqql")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f1ek2"]
+atlas = ExtResource("3_vgqql")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cbl1m"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vgqql")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fkybt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x3wgy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3smsa")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8erm5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f1ek2")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 6.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f60y1"]
+size = Vector2(54, 169)
+
+[node name="Player" type="CharacterBody2D" unique_id=1714150782]
+collision_mask = 2
+script = ExtResource("1_v0iea")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=545307644]
+scale = Vector2(6, 6)
+sprite_frames = SubResource("SpriteFrames_cbl1m")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.9694843
+
+[node name="FoodSprite" type="Sprite2D" parent="." unique_id=1700099742]
+position = Vector2(-2.842171e-14, -107)
+scale = Vector2(4.3969526, 4.3969526)
+texture = ExtResource("2_cvnsp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1759937855]
+position = Vector2(-3, 11.5)
+shape = SubResource("RectangleShape2D_f60y1")
