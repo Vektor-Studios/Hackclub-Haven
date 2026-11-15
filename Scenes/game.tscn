@@ -18,8 +18,8 @@ fill_to = Vector2(1, 1)
 
 [node name="Game" type="Node2D" unique_id=445429191]
 
-[node name="HotelMap" parent="." unique_id=1709313961 instance=ExtResource("4_3dryh")]
-position = Vector2(2239, 2227)
+[node name="HotelMap2" parent="." unique_id=1709313961 instance=ExtResource("4_3dryh")]
+position = Vector2(2256, 2214)
 scale = Vector2(1.5, 1.5)
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1043050218]
