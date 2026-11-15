@@ -1,7 +1,12 @@
 [gd_scene format=3 uid="uid://du1r3j5673vca"]
 
 [ext_resource type="PackedScene" uid="uid://13tlneila0p5" path="res://Scenes/player.tscn" id="1_ebmjs"]
+[ext_resource type="PackedScene" uid="uid://dl8sll7pcc4yp" path="res://Scenes/food_item_pickup.tscn" id="2_qxrlw"]
 
 [node name="Game" type="Node2D" unique_id=445429191]
 
 [node name="Player" parent="." unique_id=1714150782 instance=ExtResource("1_ebmjs")]
+position = Vector2(685, 440)
+
+[node name="FoodItemPickup" parent="." unique_id=624916689 instance=ExtResource("2_qxrlw")]
+position = Vector2(419, 238)

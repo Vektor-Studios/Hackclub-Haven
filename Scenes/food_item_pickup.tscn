@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dl8sll7pcc4yp"]
+
+[ext_resource type="Script" uid="uid://domareak4btb3" path="res://Scripts/food_item_pickup.gd" id="1_rivou"]
+[ext_resource type="Texture2D" uid="uid://bhv7qvdb7ir0f" path="res://Sprites/burger_sprite.png" id="2_hkujc"]
+
+[node name="FoodItemPickup" type="Node2D" unique_id=624916689]
+script = ExtResource("1_rivou")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1059330968]
+scale = Vector2(1.875, 1.875)
+texture = ExtResource("2_hkujc")
