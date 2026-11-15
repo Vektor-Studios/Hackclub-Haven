@@ -10,8 +10,8 @@ size = Vector2(40, 40)
 script = ExtResource("1_v0iea")
 
 [node name="FoodSprite" type="Sprite2D" parent="." unique_id=1700099742]
-position = Vector2(1.000001, -73)
-scale = Vector2(0.71625006, 0.71625006)
+position = Vector2(0, -74)
+scale = Vector2(0.738125, 0.738125)
 texture = ExtResource("2_cvnsp")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=2017136592]
