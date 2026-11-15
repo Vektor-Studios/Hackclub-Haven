@@ -14,6 +14,18 @@ size = Vector2(326.5, 30)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rjrkd"]
 size = Vector2(11.002362, 0.9787302)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_liagi"]
+size = Vector2(12.284844, 0.9787302)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pmr8j"]
+size = Vector2(13.061102, 0.9787302)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l3m5b"]
+size = Vector2(0.99562025, 46.051296)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v73bu"]
+size = Vector2(0.99562025, 7.2308555)
+
 [node name="HotelMap" type="Node2D" unique_id=1709313961]
 
 [node name="Floor" type="Sprite2D" parent="." unique_id=727837661]
@@ -54,3 +66,34 @@ collision_layer = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Suite 1/StaticBody2D" unique_id=706409035]
 position = Vector2(22.510973, 34.4752)
 shape = SubResource("RectangleShape2D_rjrkd")
+
+[node name="Parking Lot" type="Node2D" parent="." unique_id=1839302585]
+scale = Vector2(29.63, 29.63)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Parking Lot" unique_id=1324053081]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Parking Lot/StaticBody2D" unique_id=724538470]
+position = Vector2(44.14445, -12.521094)
+shape = SubResource("RectangleShape2D_liagi")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Parking Lot" unique_id=1113010576]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Parking Lot/StaticBody2D2" unique_id=939164239]
+position = Vector2(44.532585, 34.492077)
+shape = SubResource("RectangleShape2D_pmr8j")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Parking Lot" unique_id=1932065379]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Parking Lot/StaticBody2D3" unique_id=2035474102]
+position = Vector2(38.482964, 10.993928)
+shape = SubResource("RectangleShape2D_l3m5b")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="Parking Lot" unique_id=2029246043]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Parking Lot/StaticBody2D4" unique_id=1531853403]
+position = Vector2(41.512005, 38.579998)
+shape = SubResource("RectangleShape2D_v73bu")
