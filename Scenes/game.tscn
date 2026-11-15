@@ -4,6 +4,10 @@
 [ext_resource type="PackedScene" uid="uid://dl8sll7pcc4yp" path="res://Scenes/food_item_pickup.tscn" id="2_qxrlw"]
 [ext_resource type="PackedScene" uid="uid://b34un58kud4c8" path="res://Scenes/speech_bubble.tscn" id="3_wrm1d"]
 [ext_resource type="PackedScene" uid="uid://bk4gouwwvqhsf" path="res://Scenes/hotel_map.tscn" id="4_3dryh"]
+[ext_resource type="Texture2D" uid="uid://buag7l0oc3o7v" path="res://Sprites/Monster/tree_angy.png" id="4_v158k"]
+[ext_resource type="Script" uid="uid://chogmxv1xxtc6" path="res://Scenes/tree_angy.gd" id="5_h4fw4"]
+[ext_resource type="Texture2D" uid="uid://csvj8xse8mrdj" path="res://Sprites/Monster/tree_cal m.png" id="5_wowpa"]
+[ext_resource type="Script" uid="uid://bor2jfljkp2wm" path="res://Scenes/tree_cal_m.gd" id="6_i6g32"]
 
 [sub_resource type="Gradient" id="Gradient_3dryh"]
 offsets = PackedFloat32Array(0, 0.4849624)
@@ -15,6 +19,9 @@ fill = 1
 fill_from = Vector2(0.49530515, 0.5)
 fill_to = Vector2(1, 1)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_i6g32"]
+radius = 217.0023
+
 [node name="Game" type="Node2D" unique_id=445429191]
 
 [node name="HotelMap" parent="." unique_id=1709313961 instance=ExtResource("4_3dryh")]
@@ -22,7 +29,6 @@ position = Vector2(2239, 2227)
 scale = Vector2(1.5, 1.5)
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1043050218]
-visible = false
 color = Color(0, 0, 0, 1)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=950640761]
@@ -40,6 +46,11 @@ position = Vector2(490, -309)
 shadow_enabled = true
 texture = SubResource("GradientTexture2D_wowpa")
 texture_scale = 20.0
+
+[node name="TreeAngy" type="Sprite2D" parent="CanvasLayer/Player" unique_id=1870742168]
+visible = false
+texture = ExtResource("4_v158k")
+script = ExtResource("5_h4fw4")
 
 [node name="Items" type="Node2D" parent="." unique_id=2083403025]
 position = Vector2(3088, 824)
@@ -63,8 +74,35 @@ item_id = 3
 position = Vector2(6, -262)
 item_id = 4
 
-[node name="FoodItemPickup6" parent="Items" unique_id=945997100 instance=ExtResource("2_qxrlw")]
-item_id = 5
-
 [node name="Locations" type="Node2D" parent="." unique_id=1863907811]
 position = Vector2(3088, 824)
+
+[node name="Node2D" type="Node2D" parent="Locations" unique_id=1395151314]
+position = Vector2(-940, -520)
+
+[node name="Node2D2" type="Node2D" parent="Locations" unique_id=359624353]
+position = Vector2(-2596, 1426)
+
+[node name="Node2D3" type="Node2D" parent="Locations" unique_id=1923162914]
+position = Vector2(-964, 2646)
+
+[node name="Monster" type="Node2D" parent="." unique_id=1117361443]
+position = Vector2(2124, 3470)
+
+[node name="TreeCalM" type="Sprite2D" parent="Monster" unique_id=1860236223]
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("5_wowpa")
+script = ExtResource("6_i6g32")
+
+[node name="Area2D" type="Area2D" parent="Monster" unique_id=237536401]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Monster/Area2D" unique_id=1955514685]
+position = Vector2(-15, 19)
+shape = SubResource("CircleShape2D_i6g32")
+
+[node name="Timer" type="Timer" parent="Monster" unique_id=45802651]
+wait_time = 60.0
+one_shot = true
+
+[connection signal="body_entered" from="Monster/Area2D" to="Monster/TreeCalM" method="_on_area_2d_body_entered"]
+[connection signal="timeout" from="Monster/Timer" to="Monster/TreeCalM" method="_on_timer_timeout"]
