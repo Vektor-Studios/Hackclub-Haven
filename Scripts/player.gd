@@ -15,7 +15,10 @@ func check_food():
 		return FoodItems.food_item_array[current_food]
 
 func reload_sprite():
-	$FoodSprite.texture = check_food().get_sprite_path()
+	if current_food != null:
+		$FoodSprite.texture = check_food().get_sprite_path()
+	else:
+		$FoodSprite.texture = null
 
 func _physics_process(_delta: float) -> void:
 	

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cau63g10mgg4q"]
 
-[ext_resource type="Script" path="res://Scripts/burner.gd" id="1_ldc4f"]
+[ext_resource type="Script" uid="uid://drf15ev3teuv2" path="res://Scripts/burner.gd" id="1_ldc4f"]
 [ext_resource type="Texture2D" uid="uid://bppby023f8mpx" path="res://Sprites/burner_sprite.png" id="1_xmnwn"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_603e6"]
@@ -28,6 +28,15 @@ one_shot = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1416404883]
 position = Vector2(0.75, 0)
 shape = SubResource("RectangleShape2D_ldc4f")
+
+[node name="Label" type="Label" parent="." unique_id=806502220]
+offset_left = -199.0
+offset_top = 66.0
+offset_right = 210.0
+offset_bottom = 176.0
+theme_override_colors/font_color = Color(0.7649327, 0.76493275, 0.76493275, 1)
+theme_override_font_sizes/font_size = 80
+text = "Time: 100s"
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="timeout" from="FireTimer" to="." method="_on_fire_timer_timeout"]
