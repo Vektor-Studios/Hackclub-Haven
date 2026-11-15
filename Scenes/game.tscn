@@ -22,6 +22,7 @@ position = Vector2(2239, 2227)
 scale = Vector2(1.5, 1.5)
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1043050218]
+visible = false
 color = Color(0, 0, 0, 1)
 
 [node name="Player" parent="." unique_id=1714150782 instance=ExtResource("1_ebmjs")]
@@ -40,6 +41,54 @@ follow_viewport_enabled = true
 [node name="SpeechBubble" parent="Player/CanvasLayer" unique_id=1949044896 instance=ExtResource("3_wrm1d")]
 position = Vector2(4191, 219)
 
+<<<<<<< HEAD
+[node name="FoodItemPickup" parent="." unique_id=624916689 instance=ExtResource("2_qxrlw")]
+position = Vector2(419, 238)
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1254706362]
+
+[node name="Node2D" type="Node2D" parent="Node2D" unique_id=829676081]
+position = Vector2(616, 329)
+
+[node name="Node2D2" type="Node2D" parent="Node2D" unique_id=1880247899]
+position = Vector2(619, 951)
+
+[node name="Node2D3" type="Node2D" parent="Node2D" unique_id=2029466064]
+position = Vector2(586, 1622)
+
+[node name="Node2D4" type="Node2D" parent="Node2D" unique_id=1525717144]
+position = Vector2(580, 2305)
+
+[node name="Node2D5" type="Node2D" parent="Node2D" unique_id=2122457538]
+position = Vector2(619, 2885)
+
+[node name="Node2D6" type="Node2D" parent="Node2D" unique_id=1524546605]
+position = Vector2(593, 3471)
+
+[node name="Node2D7" type="Node2D" parent="Node2D" unique_id=1569628259]
+position = Vector2(2143, 319)
+
+[node name="Node2D8" type="Node2D" parent="Node2D" unique_id=1763595652]
+position = Vector2(2156, 964)
+
+[node name="Node2D9" type="Node2D" parent="Node2D" unique_id=772554609]
+position = Vector2(2195, 1674)
+
+[node name="Node2D10" type="Node2D" parent="Node2D" unique_id=1361827960]
+position = Vector2(2188, 2312)
+
+[node name="Node2D11" type="Node2D" parent="Node2D" unique_id=237326145]
+position = Vector2(2182, 2885)
+
+[node name="Node2D12" type="Node2D" parent="Node2D" unique_id=1163951777]
+position = Vector2(2208, 3451)
+
+[node name="Node2D13" type="Node2D" parent="Node2D" unique_id=1846563089]
+position = Vector2(607, 4287)
+
+[node name="Node2D14" type="Node2D" parent="Node2D" unique_id=1179756178]
+position = Vector2(2151, 4287)
+=======
 [node name="FoodItemPickup2" parent="." unique_id=624916689 instance=ExtResource("2_qxrlw")]
 position = Vector2(3515, 108)
 item_id = 1
@@ -58,3 +107,4 @@ item_id = 4
 [node name="FoodItemPickup3" parent="." unique_id=1262434873 instance=ExtResource("2_qxrlw")]
 position = Vector2(3901, 103)
 item_id = 2
+>>>>>>> db7eb707ef5175d44ab393fc1f16bbaa8ca3abf2
