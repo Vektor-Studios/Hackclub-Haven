@@ -3,10 +3,28 @@
 [ext_resource type="Texture2D" uid="uid://iu33gmlwnxls" path="res://Sprites/hotel_floor.png" id="1_dr8dx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dr8dx"]
-size = Vector2(30.25, 2519)
+size = Vector2(29, 1422)
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_dr8dx"]
-polygon = PackedVector2Array(504, -1482, 504, 1037, 474, 1037, 474, -1482)
+polygon = PackedVector2Array(503.625, -933.5, 503.625, 488.5, 474.625, 488.5, 474.625, -933.5, 502.625, -933.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dvflo"]
+size = Vector2(29, 2544)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_rjrkd"]
+polygon = PackedVector2Array(504, 1049.5, 475, 1049.5, 474, -1494.5, 504, -1494.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_onupe"]
+size = Vector2(326.5, 30)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_liagi"]
+polygon = PackedVector2Array(652.375, -237.5, 652.375, -207.5, 325.375, -208.5, 325.375, -237.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rjrkd"]
+size = Vector2(11.002362, 0.9787302)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_pmr8j"]
+polygon = PackedVector2Array(494.6262, -222.9894, 494.6262, -221.9769, 483.62384, -221.9769, 483.62384, -222.9894)
 
 [node name="HotelMap" type="Node2D" unique_id=1709313961]
 
@@ -14,12 +32,52 @@ polygon = PackedVector2Array(504, -1482, 504, 1037, 474, 1037, 474, -1482)
 scale = Vector2(29.63, 29.63)
 texture = ExtResource("1_dr8dx")
 
-[node name="RigidBody2D" type="StaticBody2D" parent="." unique_id=1676331672]
+[node name="Suite 1" type="Node2D" parent="." unique_id=809695953]
+scale = Vector2(29.63, 29.63)
+
+[node name="RigidBody2D" type="StaticBody2D" parent="Suite 1" unique_id=1676331672]
+scale = Vector2(0.03374958, 0.03374958)
 collision_layer = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=1695678276]
-position = Vector2(489.125, -222.5)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Suite 1/RigidBody2D" unique_id=1695678276]
+position = Vector2(844.5, 326)
 shape = SubResource("RectangleShape2D_dr8dx")
 
-[node name="LightOccluder2D" type="LightOccluder2D" parent="RigidBody2D" unique_id=1412579531]
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Suite 1/RigidBody2D/CollisionShape2D" unique_id=1412579531]
+position = Vector2(-489.125, 222.5)
 occluder = SubResource("OccluderPolygon2D_dr8dx")
+
+[node name="RigidBody2D2" type="StaticBody2D" parent="Suite 1" unique_id=550944730]
+scale = Vector2(0.03374958, 0.03374958)
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Suite 1/RigidBody2D2" unique_id=268181881]
+position = Vector2(489.125, -236)
+shape = SubResource("RectangleShape2D_dvflo")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Suite 1/RigidBody2D2/CollisionShape2D" unique_id=630522774]
+position = Vector2(-489.125, 222.5)
+occluder = SubResource("OccluderPolygon2D_rjrkd")
+
+[node name="RigidBody2D3" type="StaticBody2D" parent="Suite 1" unique_id=1665198409]
+position = Vector2(-2.261222, 0)
+scale = Vector2(0.03374958, 0.03374958)
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Suite 1/RigidBody2D3" unique_id=519765564]
+position = Vector2(733.75, -370)
+shape = SubResource("RectangleShape2D_onupe")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Suite 1/RigidBody2D3/CollisionShape2D" unique_id=910041001]
+position = Vector2(-489.125, 222.5)
+occluder = SubResource("OccluderPolygon2D_liagi")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Suite 1" unique_id=1170511474]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Suite 1/StaticBody2D" unique_id=706409035]
+position = Vector2(22.510973, 34.4752)
+shape = SubResource("RectangleShape2D_rjrkd")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Suite 1/StaticBody2D/CollisionShape2D" unique_id=1212790766]
+position = Vector2(-489.125, 222.5)
+occluder = SubResource("OccluderPolygon2D_pmr8j")
