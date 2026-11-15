@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c64801jx4wh8u"
-path="res://.godot/imported/blood_smoothie_sprite.png-0c32c738a283937863d3704e44e05b5d.ctex"
+uid="uid://cecse0mu8tnfs"
+path="res://.godot/imported/hot_dog_sprite.png-fbc0ec73b7e314da3c351f022ea8ee37.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/blood_smoothie_sprite.png"
-dest_files=["res://.godot/imported/blood_smoothie_sprite.png-0c32c738a283937863d3704e44e05b5d.ctex"]
+source_file="res://Sprites/food_items/hot_dog_sprite.png"
+dest_files=["res://.godot/imported/hot_dog_sprite.png-fbc0ec73b7e314da3c351f022ea8ee37.ctex"]
 
 [params]
 
