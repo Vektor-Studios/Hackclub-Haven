@@ -23,7 +23,6 @@ position = Vector2(2256, 2214)
 scale = Vector2(1.5, 1.5)
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1043050218]
-visible = false
 color = Color(0, 0, 0, 1)
 
 [node name="Player" parent="." unique_id=1714150782 instance=ExtResource("1_ebmjs")]
