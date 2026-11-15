@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhv7qvdb7ir0f"
-path="res://.godot/imported/burger_sprite.png-4d86ae44d6badb53a168b311e3364e6b.ctex"
+uid="uid://baxp3hc4xe3ye"
+path="res://.godot/imported/human_head_sprite.png-81385ec704db0c498f061bfd5f870087.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/burger_sprite.png"
-dest_files=["res://.godot/imported/burger_sprite.png-4d86ae44d6badb53a168b311e3364e6b.ctex"]
+source_file="res://Sprites/human_head_sprite.png"
+dest_files=["res://.godot/imported/human_head_sprite.png-81385ec704db0c498f061bfd5f870087.ctex"]
 
 [params]
 
