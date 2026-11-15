@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b34un58kud4c8"]
+
+[ext_resource type="Texture2D" uid="uid://e7cukbeuivkh" path="res://Sprites/speech_bubble.png" id="1_0ss60"]
+[ext_resource type="Script" uid="uid://n3soql5ddm3y" path="res://Scripts/speech_bubble.gd" id="1_f4c0y"]
+
+[node name="SpeechBubble" type="Node2D" unique_id=1949044896]
+script = ExtResource("1_f4c0y")
+
+[node name="BubbleSprite" type="Sprite2D" parent="." unique_id=210276449]
+position = Vector2(-92.99999, -93.99999)
+scale = Vector2(6.203125, 6.203125)
+texture = ExtResource("1_0ss60")
+
+[node name="FoodSprite" type="Sprite2D" parent="." unique_id=913448739]
+position = Vector2(-93, -76)
+scale = Vector2(3.125, 3.125)
