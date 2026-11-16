@@ -81,7 +81,7 @@ position = Vector2(3088, 824)
 position = Vector2(-940, -520)
 
 [node name="Node2D2" type="Node2D" parent="Locations" unique_id=359624353]
-position = Vector2(-2596, 1426)
+position = Vector2(-2596, 861)
 
 [node name="Node2D3" type="Node2D" parent="Locations" unique_id=1923162914]
 position = Vector2(-964, 2646)

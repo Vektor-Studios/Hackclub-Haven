@@ -1,3 +1,4 @@
 extends Node
 
-var location = Vector2(-2596,1426)
+func _ready() -> void:
+	randomize()
