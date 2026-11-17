@@ -9,12 +9,12 @@
 [ext_resource type="Texture2D" uid="uid://csvj8xse8mrdj" path="res://Sprites/Monster/tree_cal m.png" id="5_wowpa"]
 [ext_resource type="Script" uid="uid://bor2jfljkp2wm" path="res://Scripts/tree_cal_m.gd" id="6_i6g32"]
 
-[sub_resource type="Gradient" id="Gradient_3dryh"]
+[sub_resource type="Gradient" id="Gradient_ldgsr"]
 offsets = PackedFloat32Array(0, 0.4849624)
 colors = PackedColorArray(0.78183013, 0.78183013, 0.7818301, 1, 0, 0, 0, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_wowpa"]
-gradient = SubResource("Gradient_3dryh")
+gradient = SubResource("Gradient_ldgsr")
 fill = 1
 fill_from = Vector2(0.49530515, 0.5)
 fill_to = Vector2(1, 1)
@@ -28,7 +28,7 @@ radius = 217.0023
 position = Vector2(2239, 2227)
 scale = Vector2(1.5, 1.5)
 
-[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1043050218]
+[node name="Darkness" type="CanvasModulate" parent="." unique_id=1043050218]
 color = Color(0, 0, 0, 1)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=950640761]
@@ -43,6 +43,7 @@ position = Vector2(3711, 538)
 position = Vector2(490, -309)
 
 [node name="PointLight2D" type="PointLight2D" parent="CanvasLayer/Player" unique_id=825039255]
+energy = 0.7
 shadow_enabled = true
 texture = SubResource("GradientTexture2D_wowpa")
 texture_scale = 27.0

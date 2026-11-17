@@ -1,13 +1,22 @@
 [gd_scene format=3 uid="uid://cau63g10mgg4q"]
 
 [ext_resource type="Script" uid="uid://drf15ev3teuv2" path="res://Scripts/burner.gd" id="1_ldc4f"]
-[ext_resource type="Texture2D" uid="uid://bppby023f8mpx" path="res://Sprites/burner_sprite.png" id="1_xmnwn"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_603e6"]
 radius = 138.00362
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ldc4f"]
 size = Vector2(126.5, 126)
+
+[sub_resource type="Gradient" id="Gradient_3dryh"]
+offsets = PackedFloat32Array(0, 0.4849624)
+colors = PackedColorArray(0.78183013, 0.78183013, 0.7818301, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_xmnwn"]
+gradient = SubResource("Gradient_3dryh")
+fill = 1
+fill_from = Vector2(0.49530515, 0.5)
+fill_to = Vector2(1, 1)
 
 [node name="Burner" type="StaticBody2D" unique_id=1445088838]
 collision_layer = 2
@@ -36,6 +45,12 @@ offset_bottom = 176.0
 theme_override_colors/font_color = Color(0.7649327, 0.76493275, 0.76493275, 1)
 theme_override_font_sizes/font_size = 80
 text = "Time: 100s"
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=394190387]
+color = Color(1, 0.63230413, 0.44615072, 1)
+shadow_enabled = true
+texture = SubResource("GradientTexture2D_xmnwn")
+texture_scale = 27.0
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="timeout" from="FireTimer" to="." method="_on_fire_timer_timeout"]
