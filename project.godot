@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Hackclub Haven"
+config/name="Rebound Job"
 run/main_scene="uid://du1r3j5673vca"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://Sprites/icon.svg"
